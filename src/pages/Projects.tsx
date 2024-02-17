@@ -1,6 +1,5 @@
 import arrow from '../assets/image/arrow.png';
 import Project from '../components/Project';
-import img1 from "../assets/image/project-1.png";
 
 const Projects = () => {
 
@@ -62,8 +61,7 @@ const Projects = () => {
                   img={item.img}
                   title={item.title}
                   description={item.description}
-                  repo={item.repo}
-                  link={item.link}
+          
               />;
           })
           }

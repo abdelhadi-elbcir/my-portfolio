@@ -2,11 +2,9 @@ interface ProjectProps{
     readonly img:string;
     readonly title:string;
     readonly description:string;
-    readonly repo:string;
-    readonly link:string
 }
 
-const Project = ({ img, title , description , repo , link}:ProjectProps) => {
+const Project = ({ img, title , description }:ProjectProps) => {
 
     
 

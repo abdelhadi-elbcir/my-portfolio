@@ -1,4 +1,3 @@
-import React from 'react'
 import arrow from "../assets/image/arrow.png";
 import Experience from '../components/Experience';
 
