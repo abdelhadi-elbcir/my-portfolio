@@ -10,7 +10,7 @@ const MobileNavbar = () => {
 
   return (
     <nav id="hamburger-nav">
-      <div className="logo">John Doe</div>
+      <div className="logo">Abdelhadi</div>
       <div className="hamburger-menu">
         <div className="hamburger-icon" onClick={toggleMenu}>
           <span></span>
