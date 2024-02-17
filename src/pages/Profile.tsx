@@ -44,6 +44,7 @@ const Profile = () => {
           />
         </div>
       </div>
+      
     </section>
   );
 };

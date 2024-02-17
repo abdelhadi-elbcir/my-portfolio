@@ -3,6 +3,7 @@ import linkedin from "../assets/image/linkedin.png"
 const Contact = () => {
   return (
     <section id="contact">
+      <hr/>
       <p className="section__text__p1">Get in Touch</p>
       <h1 className="title">Contact Me</h1>
       <div className="contact-info-upper-container">

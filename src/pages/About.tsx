@@ -1,11 +1,12 @@
 import arrow from "../assets/image/arrow.png";
 import experience from "../assets/image/experience.png";
 import education from "../assets/image/education.png";
-import aboutPic from "../assets/image/about-pic.png";
+import aboutPic from "../assets/image/about-pic.jpeg";
 
 const About = () => {
   return (
     <section id="about">
+      <hr/>
     <p className="section__text__p1">Get To Know More</p>
     <h1 className="title">About Me</h1>
     <div className="section-container">
@@ -25,7 +26,7 @@ const About = () => {
               className="icon"
             />
             <h3>Experience</h3>
-            <p>2+ years <br />Frontend Development</p>
+            <p>2+ years <br />Backend Development</p>
           </div>
           <div className="details-container">
             <img
@@ -34,17 +35,16 @@ const About = () => {
               className="icon"
             />
             <h3>Education</h3>
-            <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
+            <p>B.Sc. Bacalaureat Degree<br />E.Sc. Engineering Degree</p>
           </div>
         </div>
         <div className="text-container">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-            reprehenderit et laborum, rem, dolore eum quod voluptate
-            exercitationem nobis, nihil esse debitis maxime facere minus sint
-            delectus velit in eos quo officiis explicabo deleniti dignissimos.
-            Eligendi illum libero dolorum cum laboriosam corrupti quidem,
-            reiciendis ea magnam? Nulla, impedit fuga!
+          A backend developer proficient in Java and Java EE, with a focus on Spring Boot, 
+          plays a crucial role in building the server-side components of modern web applications. 
+          Java serves as the primary programming language, while frameworks like Java EE and Spring 
+          Boot provide a robust foundation for developing scalable, maintainable, and efficient backend 
+          systems.
           </p>
         </div>
       </div>
