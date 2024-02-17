@@ -7,42 +7,45 @@ const Projects = () => {
     { 
         title: "Wadifaty Mobile",
         description: "Android Mobile App",
-        repo: "https://github.com/html-project",
-        link: "https://example.com/html-project"
+        repo: "https://github.com/abdelhadi-elbcir",
+        link: "https://play.google.com/store/apps/details?id=com.app.wadifaty"
     },
     { 
         title: "Wadifaty Website",
         description: "Wadifaty blogging website",
-        repo: "https://github.com/css-project",
-        link: "https://example.com/css-project"
+        repo: "https://github.com/abdelhadi-elbcir",
+        link: "https://www.wadifaty.ma/"
     },
     { 
         title: "Conférence Managment",
         description: "Website to managed a confrence",
-        repo: "https://github.com/sass-project",
-        link: "https://example.com/sass-project"
+        repo: "https://github.com/abdelhadi-elbcir",
+        link: "https://github.com/abdelhadi-elbcir"
     },
     { 
-        img: "path/to/js-image.jpg",
         title: "Travel Easy Hotel",
         description: "Website to manage an hotel",
-        repo: "https://github.com/js-project",
-        link: "https://example.com/js-project"
+        repo: "https://github.com/abdelhadi-elbcir",
+        link: "https://github.com/abdelhadi-elbcir"
     },
     { 
         title: "IRISI Hopspitale",
         description: "Website to manage a hospitale",
-        repo: "https://github.com/ts-project",
-        link: "https://example.com/ts-project"
+        repo: "https://github.com/abdelhadi-elbcir",
+        link: "https://github.com/abdelhadi-elbcir"
     },
     { 
         title: "Offres Exclusives",
         description: "Website and Mobile(Android)",
-        repo: "https://github.com/material-ui-project",
-        link: "https://example.com/material-ui-project"
+        repo: "https://github.com/abdelhadi-elbcir",
+        link: "http://offresexclusives.org/"
     },
 ];
 
+const changeURL = (url: string) => {
+  window.location.href = url;
+};
+  
   return (
     <section id="projects">
       <hr/>
@@ -56,7 +59,8 @@ const Projects = () => {
                   key={index}
                   title={item.title}
                   description={item.description}
-          
+                  repo={item.repo}
+                  link={item.link}
               />;
           })
           }
@@ -64,6 +68,7 @@ const Projects = () => {
       </div>
       <img
         src={arrow}
+        onClick={()=>changeURL('#contact')}
         alt="Arrow icon"
         className="icon arrow"
       />

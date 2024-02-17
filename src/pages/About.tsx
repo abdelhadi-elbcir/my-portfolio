@@ -4,6 +4,11 @@ import education from "../assets/image/education.png";
 import aboutPic from "../assets/image/about-pic.jpeg";
 
 const About = () => {
+
+  const changeURL = (url: string) => {
+    window.location.href = url;
+  };
+
   return (
     <section id="about">
       <hr/>
@@ -52,6 +57,7 @@ const About = () => {
     <img
       src={arrow}
       alt="Arrow icon"
+      onClick={()=>changeURL('#contact')}
       className="icon arrow"
     />
   </section>

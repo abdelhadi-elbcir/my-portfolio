@@ -21,11 +21,11 @@ const Profile = () => {
         <div className="btn-container">
           <button
             className="btn btn-color-2"
-            onClick={()=>changeURL('')}
+            onClick={()=>changeURL('mailto:abdelhadi.elbcir@gmail.com')}
           >
             Download CV
           </button>
-          <button className="btn btn-color-1" onClick={()=>changeURL('')}>
+          <button className="btn btn-color-1" onClick={()=>changeURL('#contact')}>
             Contact Info
           </button>
         </div>
@@ -34,13 +34,13 @@ const Profile = () => {
             src={linkedin}
             alt="My LinkedIn profile"
             className="icon"
-            onClick={()=>changeURL('')}
+            onClick={()=>changeURL('https://www.linkedin.com/in/abdelhadi-elbcir/')}
           />
           <img
             src={github}
             alt="My Github profile"
             className="icon"
-            onClick={()=>changeURL('')}
+            onClick={()=>changeURL('https://github.com/Abdelhadi-ELbcir/')}
           />
         </div>
       </div>

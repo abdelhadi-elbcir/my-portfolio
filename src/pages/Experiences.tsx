@@ -17,7 +17,12 @@ const Experiences = () => {
         { title: "Docker", level: "Intermediate" },
         { title: "Shell Script", level: "Intermediate" },
         { title: "Docker Swarm", level: "Intermediate" },
-    ]
+    ];
+
+    const changeURL = (url: string) => {
+        window.location.href = url;
+      };
+
     return (
         <section id="experience">
             <hr/>
@@ -52,6 +57,7 @@ const Experiences = () => {
                 src={arrow}
                 alt="Arrow icon"
                 className="icon arrow"
+                onClick={()=>changeURL('#contact')}
             />
         </section>
     )

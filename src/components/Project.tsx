@@ -1,11 +1,15 @@
 interface ProjectProps{
     readonly title:string;
     readonly description:string;
+    readonly link:string;
+    readonly repo:string;
 }
 
-const Project = ({ title , description }:ProjectProps) => {
+const Project = ({ title , description , link ,repo }:ProjectProps) => {
 
-    
+    const changeURL = (url: string) => {
+        window.location.href = url;
+      };
 
     return (
         <div className="details-container color-container">
@@ -23,11 +27,13 @@ const Project = ({ title , description }:ProjectProps) => {
             <div className="btn-container">
                 <button
                     className="btn btn-color-2 project-btn"
+                    onClick={()=>changeURL(repo)}
                 >
                     Github
                 </button>
                 <button
                     className="btn btn-color-2 project-btn"
+                    onClick={()=>changeURL(link)}
                 >
                     Live Demo
                 </button>
